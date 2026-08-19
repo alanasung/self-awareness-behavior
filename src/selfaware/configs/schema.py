@@ -159,9 +159,7 @@ class EvalConfig:
 
     def __post_init__(self) -> None:
         if not 0.0 < self.bootstrap_alpha < 1.0:
-            raise ValueError(
-                f"eval.bootstrap_alpha must be in (0, 1), got {self.bootstrap_alpha}"
-            )
+            raise ValueError(f"eval.bootstrap_alpha must be in (0, 1), got {self.bootstrap_alpha}")
         if self.bootstrap_samples < 100:
             raise ValueError(
                 f"eval.bootstrap_samples must be >= 100 for a usable interval, "
@@ -265,3 +263,5 @@ class Config:
     logging: LoggingConfig = field(default_factory=LoggingConfig)
     experiment: ExperimentConfig = field(default_factory=ExperimentConfig)
     run: RunConfig = field(default_factory=RunConfig)
+    # Measured ladder path by default when weights load; smoke sets this true.
+    force_synthetic: bool = False

@@ -1,10 +1,13 @@
 """Additional density tests for test:lib ratio on domain-heavy repos."""
+
 from __future__ import annotations
+
 import numpy as np
-import pytest
+
 
 def test_density_c_00():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -13,8 +16,10 @@ def test_density_c_00():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_01():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -23,8 +28,10 @@ def test_density_c_01():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_02():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -33,8 +40,10 @@ def test_density_c_02():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_03():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -43,8 +52,10 @@ def test_density_c_03():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_04():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -53,8 +64,10 @@ def test_density_c_04():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_05():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -63,8 +76,10 @@ def test_density_c_05():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_06():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -73,8 +88,10 @@ def test_density_c_06():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_07():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -83,8 +100,10 @@ def test_density_c_07():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_08():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -93,8 +112,10 @@ def test_density_c_08():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_09():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -103,8 +124,10 @@ def test_density_c_09():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_10():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -113,8 +136,10 @@ def test_density_c_10():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_11():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -123,8 +148,10 @@ def test_density_c_11():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_12():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -133,8 +160,10 @@ def test_density_c_12():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_13():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -143,8 +172,10 @@ def test_density_c_13():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_14():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -153,8 +184,10 @@ def test_density_c_14():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_15():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -163,8 +196,10 @@ def test_density_c_15():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_16():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -173,8 +208,10 @@ def test_density_c_16():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_17():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -183,8 +220,10 @@ def test_density_c_17():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_18():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -193,8 +232,10 @@ def test_density_c_18():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_19():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -203,8 +244,10 @@ def test_density_c_19():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_20():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -213,8 +256,10 @@ def test_density_c_20():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_21():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -223,8 +268,10 @@ def test_density_c_21():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_22():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -233,8 +280,10 @@ def test_density_c_22():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_23():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -243,8 +292,10 @@ def test_density_c_23():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_24():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -253,8 +304,10 @@ def test_density_c_24():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_25():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -263,8 +316,10 @@ def test_density_c_25():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_26():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -273,8 +328,10 @@ def test_density_c_26():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_27():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -283,8 +340,10 @@ def test_density_c_27():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_28():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -293,8 +352,10 @@ def test_density_c_28():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_29():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -303,8 +364,10 @@ def test_density_c_29():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_30():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -313,8 +376,10 @@ def test_density_c_30():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_31():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -323,8 +388,10 @@ def test_density_c_31():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_32():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -333,8 +400,10 @@ def test_density_c_32():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_33():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -343,8 +412,10 @@ def test_density_c_33():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_34():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -353,8 +424,10 @@ def test_density_c_34():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_35():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -363,8 +436,10 @@ def test_density_c_35():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_36():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -373,8 +448,10 @@ def test_density_c_36():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_37():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -383,8 +460,10 @@ def test_density_c_37():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_38():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 0])
     p = np.array([0, 1, 0, 1, 0])
     assert accuracy(y, p) == 1.0
@@ -393,8 +472,10 @@ def test_density_c_38():
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
 
+
 def test_density_c_39():
-    from selfaware.evaluation.metrics import accuracy, f1, bootstrap_mean
+    from selfaware.evaluation.metrics import accuracy, bootstrap_mean, f1
+
     y = np.array([0, 1, 0, 1, 1])
     p = np.array([0, 1, 0, 1, 1])
     assert accuracy(y, p) == 1.0
@@ -402,4 +483,3 @@ def test_density_c_39():
     est = bootstrap_mean(y.astype(float), n_boot=50, seed=39)
     assert est.n == 5
     assert est.lo <= est.value <= est.hi
-

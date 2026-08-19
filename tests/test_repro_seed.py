@@ -1,6 +1,9 @@
-from selfaware.utils.reproducibility import set_seed
 import random
+
 import numpy as np
+
+from selfaware.utils.reproducibility import set_seed
+
 
 def test_set_seed_reproducible():
     set_seed(123)
